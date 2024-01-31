@@ -1,0 +1,15 @@
+inputSet:
+  name: TestInputSet_Teja
+  identifier: TestInputSet_Teja
+  orgIdentifier: default
+  projectIdentifier: Product_Exploratory
+  pipeline:
+    identifier: Generate_SBOM_drift_on_PR
+    properties:
+      ci:
+        codebase:
+          build:
+            type: PR
+            spec:
+              number: <+trigger.prNumber>
+  object Object: pipeline.properties.ci.codebase
