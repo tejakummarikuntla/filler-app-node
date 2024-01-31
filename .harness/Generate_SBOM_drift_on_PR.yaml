@@ -45,7 +45,7 @@ pipeline:
                     sbom_drift:
                       base: repository
                       spec:
-                        variant: main
+                        variant: <+trigger.sourceBranch>
                     resources:
                       limits:
                         memory: 500Mi
