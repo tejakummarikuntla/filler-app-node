@@ -41,7 +41,7 @@ pipeline:
                       spec:
                         url: https://github.com/tejakummarikuntla/nodeapp-kube-deployable
                         variant_type: branch
-                        variant: main
+                        variant: <+trigger.sourceBranch>
                     sbom_drift:
                       base: repository
                       spec:
